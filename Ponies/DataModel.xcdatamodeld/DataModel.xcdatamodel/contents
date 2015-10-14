@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Kategory" representedClassName="Kategory" syncable="YES">
+        <attribute name="identity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ponies" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Pony" inverseName="kategory" inverseEntity="Pony" syncable="YES"/>
+    </entity>
+    <entity name="Pony" representedClassName="Pony" syncable="YES">
+        <attribute name="identity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="kategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Kategory" inverseName="ponies" inverseEntity="Kategory" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Tag" inverseName="pony" inverseEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pony" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pony" inverseName="tags" inverseEntity="Pony" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Pony" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Kategory" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="Tag" positionX="-36" positionY="36" width="128" height="75"/>
+    </elements>
+</model>

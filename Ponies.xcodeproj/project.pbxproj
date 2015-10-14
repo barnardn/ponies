@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		149A4C3AF1931062B93378DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA68424E918C00D72F718CD /* libPods.a */; };
+		2109D5641B74F5700042FB6D /* PoniesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5631B74F5700042FB6D /* PoniesTableViewController.m */; };
+		2109D5671B74FFF30042FB6D /* PoniesSearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5661B74FFF30042FB6D /* PoniesSearchResultsTableViewCell.m */; };
+		2109D5691B75001A0042FB6D /* PoniesSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2109D5681B75001A0042FB6D /* PoniesSearchResultsTableViewCell.xib */; };
+		2109D56D1B7507780042FB6D /* PonyDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D56B1B7507780042FB6D /* PonyDetailsViewController.m */; };
+		2109D56E1B7507780042FB6D /* PonyDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2109D56C1B7507780042FB6D /* PonyDetailsViewController.xib */; };
+		2109D5711B751CAC0042FB6D /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2109D56F1B751CAC0042FB6D /* DataModel.xcdatamodeld */; };
+		2109D5811B751EED0042FB6D /* Kategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5751B751EED0042FB6D /* Kategory.m */; };
+		2109D5821B751EED0042FB6D /* _Kategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5781B751EED0042FB6D /* _Kategory.m */; };
+		2109D5831B751EED0042FB6D /* _Pony.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D57A1B751EED0042FB6D /* _Pony.m */; };
+		2109D5841B751EED0042FB6D /* _Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D57C1B751EED0042FB6D /* _Tag.m */; };
+		2109D5851B751EED0042FB6D /* Pony.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D57E1B751EED0042FB6D /* Pony.m */; };
+		2109D5861B751EED0042FB6D /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5801B751EED0042FB6D /* Tag.m */; };
+		2109D5891B7530EC0042FB6D /* OOPersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5881B7530EC0042FB6D /* OOPersistenceManager.m */; };
+		2109D5901B7531AC0042FB6D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D58E1B7531AC0042FB6D /* RootViewController.m */; };
+		2109D5911B7531AC0042FB6D /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2109D58F1B7531AC0042FB6D /* RootViewController.xib */; };
+		2109D5941B7533D60042FB6D /* NSFileManager+MOAExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5931B7533D60042FB6D /* NSFileManager+MOAExtensions.m */; };
+		2109D5971B753DE10042FB6D /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5961B753DE10042FB6D /* FavoritesTableViewController.m */; };
+		2169BDDA1B74F45E0025F3DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169BDD91B74F45E0025F3DF /* main.m */; };
+		2169BDDD1B74F45E0025F3DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169BDDC1B74F45E0025F3DF /* AppDelegate.m */; };
+		2169BDE51B74F45E0025F3DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2169BDE41B74F45E0025F3DF /* Images.xcassets */; };
+		2169BDE81B74F45E0025F3DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2169BDE61B74F45E0025F3DF /* LaunchScreen.xib */; };
+		2169BDF41B74F45E0025F3DF /* PoniesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169BDF31B74F45E0025F3DF /* PoniesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2169BDEE1B74F45E0025F3DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2169BDCC1B74F45E0025F3DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2169BDD31B74F45E0025F3DF;
+			remoteInfo = Ponies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2109D5621B74F5700042FB6D /* PoniesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoniesTableViewController.h; sourceTree = "<group>"; };
+		2109D5631B74F5700042FB6D /* PoniesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoniesTableViewController.m; sourceTree = "<group>"; };
+		2109D5651B74FFF30042FB6D /* PoniesSearchResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoniesSearchResultsTableViewCell.h; sourceTree = "<group>"; };
+		2109D5661B74FFF30042FB6D /* PoniesSearchResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoniesSearchResultsTableViewCell.m; sourceTree = "<group>"; };
+		2109D5681B75001A0042FB6D /* PoniesSearchResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PoniesSearchResultsTableViewCell.xib; sourceTree = "<group>"; };
+		2109D56A1B7507780042FB6D /* PonyDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonyDetailsViewController.h; sourceTree = "<group>"; };
+		2109D56B1B7507780042FB6D /* PonyDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PonyDetailsViewController.m; sourceTree = "<group>"; };
+		2109D56C1B7507780042FB6D /* PonyDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PonyDetailsViewController.xib; sourceTree = "<group>"; };
+		2109D5701B751CAC0042FB6D /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		2109D5741B751EED0042FB6D /* Kategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kategory.h; path = CoreData/Kategory.h; sourceTree = "<group>"; };
+		2109D5751B751EED0042FB6D /* Kategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Kategory.m; path = CoreData/Kategory.m; sourceTree = "<group>"; };
+		2109D5771B751EED0042FB6D /* _Kategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Kategory.h; sourceTree = "<group>"; };
+		2109D5781B751EED0042FB6D /* _Kategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Kategory.m; sourceTree = "<group>"; };
+		2109D5791B751EED0042FB6D /* _Pony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Pony.h; sourceTree = "<group>"; };
+		2109D57A1B751EED0042FB6D /* _Pony.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Pony.m; sourceTree = "<group>"; };
+		2109D57B1B751EED0042FB6D /* _Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Tag.h; sourceTree = "<group>"; };
+		2109D57C1B751EED0042FB6D /* _Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Tag.m; sourceTree = "<group>"; };
+		2109D57D1B751EED0042FB6D /* Pony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pony.h; path = CoreData/Pony.h; sourceTree = "<group>"; };
+		2109D57E1B751EED0042FB6D /* Pony.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pony.m; path = CoreData/Pony.m; sourceTree = "<group>"; };
+		2109D57F1B751EED0042FB6D /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tag.h; path = CoreData/Tag.h; sourceTree = "<group>"; };
+		2109D5801B751EED0042FB6D /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tag.m; path = CoreData/Tag.m; sourceTree = "<group>"; };
+		2109D5871B7530EC0042FB6D /* OOPersistenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOPersistenceManager.h; sourceTree = "<group>"; };
+		2109D5881B7530EC0042FB6D /* OOPersistenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOPersistenceManager.m; sourceTree = "<group>"; };
+		2109D58D1B7531AC0042FB6D /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		2109D58E1B7531AC0042FB6D /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		2109D58F1B7531AC0042FB6D /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		2109D5921B7533D60042FB6D /* NSFileManager+MOAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+MOAExtensions.h"; sourceTree = "<group>"; };
+		2109D5931B7533D60042FB6D /* NSFileManager+MOAExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+MOAExtensions.m"; sourceTree = "<group>"; };
+		2109D5951B753DE10042FB6D /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewController.h; sourceTree = "<group>"; };
+		2109D5961B753DE10042FB6D /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
+		2169BDD41B74F45E0025F3DF /* Ponies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ponies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2169BDD81B74F45E0025F3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2169BDD91B74F45E0025F3DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2169BDDB1B74F45E0025F3DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2169BDDC1B74F45E0025F3DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2169BDE41B74F45E0025F3DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2169BDE71B74F45E0025F3DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2169BDED1B74F45E0025F3DF /* PoniesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoniesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2169BDF21B74F45E0025F3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2169BDF31B74F45E0025F3DF /* PoniesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoniesTests.m; sourceTree = "<group>"; };
+		237797AC8FE27476DFD3A7F9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6BA68424E918C00D72F718CD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C65D66273CF1B843C8FC5B49 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2169BDD11B74F45E0025F3DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				149A4C3AF1931062B93378DD /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2169BDEA1B74F45E0025F3DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02598094B86C28109B63D36E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BA68424E918C00D72F718CD /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2109D5731B751ED60042FB6D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2109D5921B7533D60042FB6D /* NSFileManager+MOAExtensions.h */,
+				2109D5931B7533D60042FB6D /* NSFileManager+MOAExtensions.m */,
+				2109D5871B7530EC0042FB6D /* OOPersistenceManager.h */,
+				2109D5881B7530EC0042FB6D /* OOPersistenceManager.m */,
+				2109D5741B751EED0042FB6D /* Kategory.h */,
+				2109D5751B751EED0042FB6D /* Kategory.m */,
+				2109D5761B751EED0042FB6D /* machine */,
+				2109D57D1B751EED0042FB6D /* Pony.h */,
+				2109D57E1B751EED0042FB6D /* Pony.m */,
+				2109D57F1B751EED0042FB6D /* Tag.h */,
+				2109D5801B751EED0042FB6D /* Tag.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		2109D5761B751EED0042FB6D /* machine */ = {
+			isa = PBXGroup;
+			children = (
+				2109D5771B751EED0042FB6D /* _Kategory.h */,
+				2109D5781B751EED0042FB6D /* _Kategory.m */,
+				2109D5791B751EED0042FB6D /* _Pony.h */,
+				2109D57A1B751EED0042FB6D /* _Pony.m */,
+				2109D57B1B751EED0042FB6D /* _Tag.h */,
+				2109D57C1B751EED0042FB6D /* _Tag.m */,
+			);
+			name = machine;
+			path = CoreData/machine;
+			sourceTree = "<group>";
+		};
+		2169BDCB1B74F45E0025F3DF = {
+			isa = PBXGroup;
+			children = (
+				2169BDD61B74F45E0025F3DF /* Ponies */,
+				2169BDF01B74F45E0025F3DF /* PoniesTests */,
+				2169BDD51B74F45E0025F3DF /* Products */,
+				906121610B4F3F38E7A38A64 /* Pods */,
+				02598094B86C28109B63D36E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2169BDD51B74F45E0025F3DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2169BDD41B74F45E0025F3DF /* Ponies.app */,
+				2169BDED1B74F45E0025F3DF /* PoniesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2169BDD61B74F45E0025F3DF /* Ponies */ = {
+			isa = PBXGroup;
+			children = (
+				21FCBB8E1B7656DC00500D7B /* Xibs */,
+				2109D5731B751ED60042FB6D /* CoreData */,
+				2169BDDB1B74F45E0025F3DF /* AppDelegate.h */,
+				2169BDDC1B74F45E0025F3DF /* AppDelegate.m */,
+				2169BDE41B74F45E0025F3DF /* Images.xcassets */,
+				2169BDD71B74F45E0025F3DF /* Supporting Files */,
+				2109D5621B74F5700042FB6D /* PoniesTableViewController.h */,
+				2109D5631B74F5700042FB6D /* PoniesTableViewController.m */,
+				2109D5651B74FFF30042FB6D /* PoniesSearchResultsTableViewCell.h */,
+				2109D5661B74FFF30042FB6D /* PoniesSearchResultsTableViewCell.m */,
+				2109D56A1B7507780042FB6D /* PonyDetailsViewController.h */,
+				2109D56B1B7507780042FB6D /* PonyDetailsViewController.m */,
+				2109D58D1B7531AC0042FB6D /* RootViewController.h */,
+				2109D58E1B7531AC0042FB6D /* RootViewController.m */,
+				2109D5951B753DE10042FB6D /* FavoritesTableViewController.h */,
+				2109D5961B753DE10042FB6D /* FavoritesTableViewController.m */,
+			);
+			path = Ponies;
+			sourceTree = "<group>";
+		};
+		2169BDD71B74F45E0025F3DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2169BDD81B74F45E0025F3DF /* Info.plist */,
+				2169BDD91B74F45E0025F3DF /* main.m */,
+				2109D56F1B751CAC0042FB6D /* DataModel.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2169BDF01B74F45E0025F3DF /* PoniesTests */ = {
+			isa = PBXGroup;
+			children = (
+				2169BDF31B74F45E0025F3DF /* PoniesTests.m */,
+				2169BDF11B74F45E0025F3DF /* Supporting Files */,
+			);
+			path = PoniesTests;
+			sourceTree = "<group>";
+		};
+		2169BDF11B74F45E0025F3DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2169BDF21B74F45E0025F3DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21FCBB8E1B7656DC00500D7B /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				2169BDE61B74F45E0025F3DF /* LaunchScreen.xib */,
+				2109D5681B75001A0042FB6D /* PoniesSearchResultsTableViewCell.xib */,
+				2109D56C1B7507780042FB6D /* PonyDetailsViewController.xib */,
+				2109D58F1B7531AC0042FB6D /* RootViewController.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+		906121610B4F3F38E7A38A64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				237797AC8FE27476DFD3A7F9 /* Pods.debug.xcconfig */,
+				C65D66273CF1B843C8FC5B49 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2169BDD31B74F45E0025F3DF /* Ponies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2169BDF71B74F45E0025F3DF /* Build configuration list for PBXNativeTarget "Ponies" */;
+			buildPhases = (
+				F8509BF879A56AB363763296 /* Check Pods Manifest.lock */,
+				2169BDD01B74F45E0025F3DF /* Sources */,
+				2169BDD11B74F45E0025F3DF /* Frameworks */,
+				2169BDD21B74F45E0025F3DF /* Resources */,
+				7F693654B835D3D6F25B6AB7 /* Copy Pods Resources */,
+				2109D5721B751E530042FB6D /* mogenerator */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ponies;
+			productName = Ponies;
+			productReference = 2169BDD41B74F45E0025F3DF /* Ponies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2169BDEC1B74F45E0025F3DF /* PoniesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2169BDFA1B74F45E0025F3DF /* Build configuration list for PBXNativeTarget "PoniesTests" */;
+			buildPhases = (
+				2169BDE91B74F45E0025F3DF /* Sources */,
+				2169BDEA1B74F45E0025F3DF /* Frameworks */,
+				2169BDEB1B74F45E0025F3DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2169BDEF1B74F45E0025F3DF /* PBXTargetDependency */,
+			);
+			name = PoniesTests;
+			productName = PoniesTests;
+			productReference = 2169BDED1B74F45E0025F3DF /* PoniesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2169BDCC1B74F45E0025F3DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = MaestroMobile;
+				TargetAttributes = {
+					2169BDD31B74F45E0025F3DF = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2169BDEC1B74F45E0025F3DF = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 2169BDD31B74F45E0025F3DF;
+					};
+				};
+			};
+			buildConfigurationList = 2169BDCF1B74F45E0025F3DF /* Build configuration list for PBXProject "Ponies" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2169BDCB1B74F45E0025F3DF;
+			productRefGroup = 2169BDD51B74F45E0025F3DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2169BDD31B74F45E0025F3DF /* Ponies */,
+				2169BDEC1B74F45E0025F3DF /* PoniesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2169BDD21B74F45E0025F3DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2169BDE81B74F45E0025F3DF /* LaunchScreen.xib in Resources */,
+				2109D56E1B7507780042FB6D /* PonyDetailsViewController.xib in Resources */,
+				2109D5911B7531AC0042FB6D /* RootViewController.xib in Resources */,
+				2169BDE51B74F45E0025F3DF /* Images.xcassets in Resources */,
+				2109D5691B75001A0042FB6D /* PoniesSearchResultsTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2169BDEB1B74F45E0025F3DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2109D5721B751E530042FB6D /* mogenerator */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = mogenerator;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator -m $SRCROOT/$TARGET_NAME/DataModel.xcdatamodeld -H $SRCROOT/$TARGET_NAME/CoreData -M $SRCROOT/$TARGET_NAME/CoreData/machine --template-var arc=true";
+		};
+		7F693654B835D3D6F25B6AB7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8509BF879A56AB363763296 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2169BDD01B74F45E0025F3DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2109D5861B751EED0042FB6D /* Tag.m in Sources */,
+				2109D5841B751EED0042FB6D /* _Tag.m in Sources */,
+				2169BDDD1B74F45E0025F3DF /* AppDelegate.m in Sources */,
+				2109D5971B753DE10042FB6D /* FavoritesTableViewController.m in Sources */,
+				2109D5811B751EED0042FB6D /* Kategory.m in Sources */,
+				2109D56D1B7507780042FB6D /* PonyDetailsViewController.m in Sources */,
+				2109D5821B751EED0042FB6D /* _Kategory.m in Sources */,
+				2109D5641B74F5700042FB6D /* PoniesTableViewController.m in Sources */,
+				2109D5941B7533D60042FB6D /* NSFileManager+MOAExtensions.m in Sources */,
+				2109D5851B751EED0042FB6D /* Pony.m in Sources */,
+				2109D5901B7531AC0042FB6D /* RootViewController.m in Sources */,
+				2109D5711B751CAC0042FB6D /* DataModel.xcdatamodeld in Sources */,
+				2109D5831B751EED0042FB6D /* _Pony.m in Sources */,
+				2109D5671B74FFF30042FB6D /* PoniesSearchResultsTableViewCell.m in Sources */,
+				2169BDDA1B74F45E0025F3DF /* main.m in Sources */,
+				2109D5891B7530EC0042FB6D /* OOPersistenceManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2169BDE91B74F45E0025F3DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2169BDF41B74F45E0025F3DF /* PoniesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2169BDEF1B74F45E0025F3DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2169BDD31B74F45E0025F3DF /* Ponies */;
+			targetProxy = 2169BDEE1B74F45E0025F3DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2169BDE61B74F45E0025F3DF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2169BDE71B74F45E0025F3DF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2169BDF51B74F45E0025F3DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2169BDF61B74F45E0025F3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2169BDF81B74F45E0025F3DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 237797AC8FE27476DFD3A7F9 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Ponies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2169BDF91B74F45E0025F3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C65D66273CF1B843C8FC5B49 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Ponies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2169BDFB1B74F45E0025F3DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PoniesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ponies.app/Ponies";
+			};
+			name = Debug;
+		};
+		2169BDFC1B74F45E0025F3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PoniesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ponies.app/Ponies";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2169BDCF1B74F45E0025F3DF /* Build configuration list for PBXProject "Ponies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2169BDF51B74F45E0025F3DF /* Debug */,
+				2169BDF61B74F45E0025F3DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2169BDF71B74F45E0025F3DF /* Build configuration list for PBXNativeTarget "Ponies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2169BDF81B74F45E0025F3DF /* Debug */,
+				2169BDF91B74F45E0025F3DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2169BDFA1B74F45E0025F3DF /* Build configuration list for PBXNativeTarget "PoniesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2169BDFB1B74F45E0025F3DF /* Debug */,
+				2169BDFC1B74F45E0025F3DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2109D56F1B751CAC0042FB6D /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2109D5701B751CAC0042FB6D /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 2109D5701B751CAC0042FB6D /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2169BDCC1B74F45E0025F3DF /* Project object */;
+}

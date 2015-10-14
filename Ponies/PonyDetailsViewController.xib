@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PonyDetailsViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="nYi-cg-RZv" id="PJp-yE-jve"/>
+                <outlet property="favoriteButton" destination="JUu-aT-JC4" id="VJ8-Gd-bwW"/>
+                <outlet property="fullSizeImageview" destination="ASh-8q-YKY" id="qEA-Nx-Mcz"/>
+                <outlet property="nameLabel" destination="z87-oC-E8C" id="b7n-2g-a5S"/>
+                <outlet property="tagsLabel" destination="8wW-6n-QNE" id="PyC-uu-bju"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z87-oC-E8C">
+                    <rect key="frame" x="190" y="340" width="402" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.80000001192092896" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wW-6n-QNE">
+                    <rect key="frame" x="190" y="394" width="402" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.80000001192092896" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUu-aT-JC4">
+                    <rect key="frame" x="242" y="510" width="116" height="30"/>
+                    <state key="normal" title="My New Favorite">
+                        <color key="titleColor" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nYi-cg-RZv">
+                    <rect key="frame" x="290" y="188" width="20" height="20"/>
+                </activityIndicatorView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ASh-8q-YKY">
+                    <rect key="frame" x="190" y="88" width="220" height="220"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="ad4-I0-Yzg"/>
+                        <constraint firstAttribute="height" constant="220" id="lJj-gL-VvD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyL-Xn-DzT">
+                    <rect key="frame" x="190" y="316" width="37.5" height="16.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Name">
+                            <attributes>
+                                <color key="NSColor" red="1" green="0.43529412150382996" blue="0.81176471710205078" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFv-Kj-yC8">
+                    <rect key="frame" x="190" y="369" width="77" height="16.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Search Tags">
+                            <attributes>
+                                <color key="NSColor" red="1" green="0.43529412150382996" blue="0.81176471710205078" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CyL-Xn-DzT" firstAttribute="top" secondItem="ASh-8q-YKY" secondAttribute="bottom" constant="8" id="0rj-xq-ye8"/>
+                <constraint firstItem="z87-oC-E8C" firstAttribute="top" secondItem="CyL-Xn-DzT" secondAttribute="bottom" constant="8" id="1vG-XM-uoT"/>
+                <constraint firstItem="ASh-8q-YKY" firstAttribute="leading" secondItem="nYi-cg-RZv" secondAttribute="trailing" constant="-120" id="3ND-Ii-x3H"/>
+                <constraint firstItem="uFv-Kj-yC8" firstAttribute="top" secondItem="z87-oC-E8C" secondAttribute="bottom" constant="8" id="4iv-jG-YMP"/>
+                <constraint firstItem="8wW-6n-QNE" firstAttribute="leading" secondItem="z87-oC-E8C" secondAttribute="leading" id="7Bc-ic-D4E"/>
+                <constraint firstItem="8wW-6n-QNE" firstAttribute="top" secondItem="uFv-Kj-yC8" secondAttribute="bottom" constant="8" id="7TU-3H-O9e"/>
+                <constraint firstItem="z87-oC-E8C" firstAttribute="leading" secondItem="ASh-8q-YKY" secondAttribute="leading" id="D3q-lv-aFk"/>
+                <constraint firstItem="uFv-Kj-yC8" firstAttribute="leading" secondItem="z87-oC-E8C" secondAttribute="leading" id="JsJ-SQ-bKM"/>
+                <constraint firstAttribute="centerX" secondItem="ASh-8q-YKY" secondAttribute="centerX" id="N1I-L9-FRp"/>
+                <constraint firstAttribute="trailing" secondItem="z87-oC-E8C" secondAttribute="trailing" constant="8" id="OVV-9U-sgs"/>
+                <constraint firstAttribute="centerX" secondItem="JUu-aT-JC4" secondAttribute="centerX" id="Slm-AJ-BrM"/>
+                <constraint firstItem="z87-oC-E8C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="X2a-qx-7xc"/>
+                <constraint firstItem="ASh-8q-YKY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="80" id="hJT-hj-HJx"/>
+                <constraint firstItem="CyL-Xn-DzT" firstAttribute="leading" secondItem="ASh-8q-YKY" secondAttribute="leading" id="hLn-bH-1Zt"/>
+                <constraint firstAttribute="trailing" secondItem="8wW-6n-QNE" secondAttribute="trailing" constant="8" id="p1n-4Q-hIj"/>
+                <constraint firstItem="ASh-8q-YKY" firstAttribute="top" secondItem="nYi-cg-RZv" secondAttribute="bottom" constant="-120" id="tIF-0S-esq"/>
+                <constraint firstAttribute="bottom" secondItem="JUu-aT-JC4" secondAttribute="bottom" constant="60" id="ukn-F5-3C9"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="X2a-qx-7xc"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
