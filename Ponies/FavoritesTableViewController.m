@@ -31,6 +31,7 @@
 - (UITabBarItem *)tabBarItem {
     UITabBarItem *tbi = [super tabBarItem];
     tbi.title = @"My Faves!";
+    tbi.image = [[UIImage imageNamed:@"tab-faves"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     return tbi;
 }
 

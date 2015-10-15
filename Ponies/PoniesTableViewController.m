@@ -33,6 +33,7 @@
 - (UITabBarItem *)tabBarItem {
     UITabBarItem *tbi = [super tabBarItem];
     tbi.title = @"Find Ponies";
+    tbi.image = [UIImage imageNamed:@"tab-ponies"];
     return tbi;
 }
 

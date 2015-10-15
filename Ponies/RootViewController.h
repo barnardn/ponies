@@ -11,6 +11,5 @@
 
 @interface RootViewController : UIViewController
 
-- (void)presentMainInterfaceWithManagedObjectContext:(NSManagedObjectContext *)context;
 
 @end
