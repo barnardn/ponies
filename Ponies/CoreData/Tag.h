@@ -1,8 +1,11 @@
-#import "_Tag.h"
+#import <Realm/Realm.h>
 
-@interface Tag : _Tag {}
+@interface Tag : RLMObject
 
+@property NSString *name;
 
-+ (instancetype)tagWithName:(NSString *)name context:(NSManagedObjectContext *)context;
+//+ (instancetype)tagWithName:(NSString *)name context:(NSManagedObjectContext *)context;
 
 @end
+
+RLM_ARRAY_TYPE(Tag)

@@ -16,17 +16,14 @@
 
 @interface FavoritesTableViewController ()
 
-@property (strong, nonatomic) NSManagedObjectContext *context;
-@property (strong, nonatomic) NSFetchedResultsController *fetchController;
 
 @end
 
 @implementation FavoritesTableViewController
 
-- (instancetype)initWithContext:(NSManagedObjectContext *)context; {
+- (instancetype)init {
     self = [super initWithStyle:UITableViewStylePlain];
     if (!self) return nil;
-    _context = context;
     return self;
 }
 
@@ -50,39 +47,39 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:[Pony entityName]];
-    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"kategory.name" ascending:YES]];
-    self.fetchController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:self.context sectionNameKeyPath:nil cacheName:nil];
-    [self.fetchController performFetch:NULL];
-    [self.tableView reloadData];
+//    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:[Pony entityName]];
+//    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"kategory.name" ascending:YES]];
+//    self.fetchController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:self.context sectionNameKeyPath:nil cacheName:nil];
+//    [self.fetchController performFetch:NULL];
+//    [self.tableView reloadData];
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if ([self.fetchController.sections count] > 0) {
-        id <NSFetchedResultsSectionInfo> sectionInfo = self.fetchController.sections[section];
-        return [sectionInfo numberOfObjects];
-    }
+//    if ([self.fetchController.sections count] > 0) {
+//        id <NSFetchedResultsSectionInfo> sectionInfo = self.fetchController.sections[section];
+//        return [sectionInfo numberOfObjects];
+//    }
     return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     PoniesSearchResultsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([PoniesSearchResultsTableViewCell class])];
-    Pony *pony = [self.fetchController objectAtIndexPath:indexPath];
-    
-    cell.categoryName = pony.kategory.name;
-    NSString *filename = [NSString stringWithFormat:@"pony-face-%@.png", pony.identity];
-    NSURL *url = [[NSFileManager defaultManager] MOA_urlForResourceNamed:filename];
-    cell.thumbnailImageview.image = [UIImage imageWithContentsOfFile:[url path]];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//    Pony *pony = [self.fetchController objectAtIndexPath:indexPath];
+//    
+//    cell.categoryName = pony.kategory.name;
+//    NSString *filename = [NSString stringWithFormat:@"pony-face-%@.png", pony.identity];
+//    NSURL *url = [[NSFileManager defaultManager] MOA_urlForResourceNamed:filename];
+//    cell.thumbnailImageview.image = [UIImage imageWithContentsOfFile:[url path]];
+//    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    Pony *pony = [self.fetchController objectAtIndexPath:indexPath];
-    PonyDetailsViewController *detail = [[PonyDetailsViewController alloc] initWithPony:pony ponyInfo:nil];
-    detail.context = self.context;
-    [self.navigationController pushViewController:detail animated:YES];
+//    Pony *pony = [self.fetchController objectAtIndexPath:indexPath];
+//    PonyDetailsViewController *detail = [[PonyDetailsViewController alloc] initWithPony:pony ponyInfo:nil];
+//    detail.context = self.context;
+//    [self.navigationController pushViewController:detail animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

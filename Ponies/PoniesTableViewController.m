@@ -23,11 +23,10 @@
 
 @implementation PoniesTableViewController
 
-- (instancetype)initWithManagedObjectContext:(NSManagedObjectContext *)context {
+- (instancetype)init {
     self = [super initWithStyle:UITableViewStylePlain];
     if (!self) return nil;
     _sessionManager = [self _sessionManager];
-    _context = context;
     return self;
 }
 

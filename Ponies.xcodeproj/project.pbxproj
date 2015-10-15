@@ -15,12 +15,8 @@
 		2109D56E1B7507780042FB6D /* PonyDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2109D56C1B7507780042FB6D /* PonyDetailsViewController.xib */; };
 		2109D5711B751CAC0042FB6D /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2109D56F1B751CAC0042FB6D /* DataModel.xcdatamodeld */; };
 		2109D5811B751EED0042FB6D /* Kategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5751B751EED0042FB6D /* Kategory.m */; };
-		2109D5821B751EED0042FB6D /* _Kategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5781B751EED0042FB6D /* _Kategory.m */; };
-		2109D5831B751EED0042FB6D /* _Pony.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D57A1B751EED0042FB6D /* _Pony.m */; };
-		2109D5841B751EED0042FB6D /* _Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D57C1B751EED0042FB6D /* _Tag.m */; };
 		2109D5851B751EED0042FB6D /* Pony.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D57E1B751EED0042FB6D /* Pony.m */; };
 		2109D5861B751EED0042FB6D /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5801B751EED0042FB6D /* Tag.m */; };
-		2109D5891B7530EC0042FB6D /* OOPersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5881B7530EC0042FB6D /* OOPersistenceManager.m */; };
 		2109D5901B7531AC0042FB6D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D58E1B7531AC0042FB6D /* RootViewController.m */; };
 		2109D5911B7531AC0042FB6D /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2109D58F1B7531AC0042FB6D /* RootViewController.xib */; };
 		2109D5941B7533D60042FB6D /* NSFileManager+MOAExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5931B7533D60042FB6D /* NSFileManager+MOAExtensions.m */; };
@@ -29,18 +25,23 @@
 		2169BDDD1B74F45E0025F3DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169BDDC1B74F45E0025F3DF /* AppDelegate.m */; };
 		2169BDE51B74F45E0025F3DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2169BDE41B74F45E0025F3DF /* Images.xcassets */; };
 		2169BDE81B74F45E0025F3DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2169BDE61B74F45E0025F3DF /* LaunchScreen.xib */; };
-		2169BDF41B74F45E0025F3DF /* PoniesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169BDF31B74F45E0025F3DF /* PoniesTests.m */; };
+		497812811BCF1D0D001904E9 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497812801BCF1D0D001904E9 /* Realm.framework */; };
+		497812821BCF1D0D001904E9 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 497812801BCF1D0D001904E9 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2169BDEE1B74F45E0025F3DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2169BDCC1B74F45E0025F3DF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2169BDD31B74F45E0025F3DF;
-			remoteInfo = Ponies;
+/* Begin PBXCopyFilesBuildPhase section */
+		497812831BCF1D0D001904E9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				497812821BCF1D0D001904E9 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2109D5621B74F5700042FB6D /* PoniesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoniesTableViewController.h; sourceTree = "<group>"; };
@@ -54,18 +55,10 @@
 		2109D5701B751CAC0042FB6D /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		2109D5741B751EED0042FB6D /* Kategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kategory.h; path = CoreData/Kategory.h; sourceTree = "<group>"; };
 		2109D5751B751EED0042FB6D /* Kategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Kategory.m; path = CoreData/Kategory.m; sourceTree = "<group>"; };
-		2109D5771B751EED0042FB6D /* _Kategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Kategory.h; sourceTree = "<group>"; };
-		2109D5781B751EED0042FB6D /* _Kategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Kategory.m; sourceTree = "<group>"; };
-		2109D5791B751EED0042FB6D /* _Pony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Pony.h; sourceTree = "<group>"; };
-		2109D57A1B751EED0042FB6D /* _Pony.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Pony.m; sourceTree = "<group>"; };
-		2109D57B1B751EED0042FB6D /* _Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Tag.h; sourceTree = "<group>"; };
-		2109D57C1B751EED0042FB6D /* _Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Tag.m; sourceTree = "<group>"; };
 		2109D57D1B751EED0042FB6D /* Pony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pony.h; path = CoreData/Pony.h; sourceTree = "<group>"; };
 		2109D57E1B751EED0042FB6D /* Pony.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pony.m; path = CoreData/Pony.m; sourceTree = "<group>"; };
 		2109D57F1B751EED0042FB6D /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tag.h; path = CoreData/Tag.h; sourceTree = "<group>"; };
 		2109D5801B751EED0042FB6D /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tag.m; path = CoreData/Tag.m; sourceTree = "<group>"; };
-		2109D5871B7530EC0042FB6D /* OOPersistenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOPersistenceManager.h; sourceTree = "<group>"; };
-		2109D5881B7530EC0042FB6D /* OOPersistenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOPersistenceManager.m; sourceTree = "<group>"; };
 		2109D58D1B7531AC0042FB6D /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		2109D58E1B7531AC0042FB6D /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		2109D58F1B7531AC0042FB6D /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
@@ -80,10 +73,10 @@
 		2169BDDC1B74F45E0025F3DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2169BDE41B74F45E0025F3DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2169BDE71B74F45E0025F3DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		2169BDED1B74F45E0025F3DF /* PoniesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoniesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2169BDF21B74F45E0025F3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2169BDF31B74F45E0025F3DF /* PoniesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoniesTests.m; sourceTree = "<group>"; };
 		237797AC8FE27476DFD3A7F9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		497812801BCF1D0D001904E9 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		6BA68424E918C00D72F718CD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C65D66273CF1B843C8FC5B49 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,14 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497812811BCF1D0D001904E9 /* Realm.framework in Frameworks */,
 				149A4C3AF1931062B93378DD /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2169BDEA1B74F45E0025F3DF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,41 +97,23 @@
 		02598094B86C28109B63D36E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				497812801BCF1D0D001904E9 /* Realm.framework */,
 				6BA68424E918C00D72F718CD /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2109D5731B751ED60042FB6D /* CoreData */ = {
+		2109D5731B751ED60042FB6D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2109D5921B7533D60042FB6D /* NSFileManager+MOAExtensions.h */,
-				2109D5931B7533D60042FB6D /* NSFileManager+MOAExtensions.m */,
-				2109D5871B7530EC0042FB6D /* OOPersistenceManager.h */,
-				2109D5881B7530EC0042FB6D /* OOPersistenceManager.m */,
 				2109D5741B751EED0042FB6D /* Kategory.h */,
 				2109D5751B751EED0042FB6D /* Kategory.m */,
-				2109D5761B751EED0042FB6D /* machine */,
 				2109D57D1B751EED0042FB6D /* Pony.h */,
 				2109D57E1B751EED0042FB6D /* Pony.m */,
 				2109D57F1B751EED0042FB6D /* Tag.h */,
 				2109D5801B751EED0042FB6D /* Tag.m */,
 			);
-			name = CoreData;
-			sourceTree = "<group>";
-		};
-		2109D5761B751EED0042FB6D /* machine */ = {
-			isa = PBXGroup;
-			children = (
-				2109D5771B751EED0042FB6D /* _Kategory.h */,
-				2109D5781B751EED0042FB6D /* _Kategory.m */,
-				2109D5791B751EED0042FB6D /* _Pony.h */,
-				2109D57A1B751EED0042FB6D /* _Pony.m */,
-				2109D57B1B751EED0042FB6D /* _Tag.h */,
-				2109D57C1B751EED0042FB6D /* _Tag.m */,
-			);
-			name = machine;
-			path = CoreData/machine;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		2169BDCB1B74F45E0025F3DF = {
@@ -162,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				2169BDD41B74F45E0025F3DF /* Ponies.app */,
-				2169BDED1B74F45E0025F3DF /* PoniesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,22 +138,14 @@
 		2169BDD61B74F45E0025F3DF /* Ponies */ = {
 			isa = PBXGroup;
 			children = (
-				21FCBB8E1B7656DC00500D7B /* Xibs */,
-				2109D5731B751ED60042FB6D /* CoreData */,
+				497812881BCF1EA4001904E9 /* Categories */,
+				497812871BCF1E9A001904E9 /* Classes */,
+				497812851BCF1E57001904E9 /* View Controllers */,
+				2109D5731B751ED60042FB6D /* Models */,
 				2169BDDB1B74F45E0025F3DF /* AppDelegate.h */,
 				2169BDDC1B74F45E0025F3DF /* AppDelegate.m */,
 				2169BDE41B74F45E0025F3DF /* Images.xcassets */,
 				2169BDD71B74F45E0025F3DF /* Supporting Files */,
-				2109D5621B74F5700042FB6D /* PoniesTableViewController.h */,
-				2109D5631B74F5700042FB6D /* PoniesTableViewController.m */,
-				2109D5651B74FFF30042FB6D /* PoniesSearchResultsTableViewCell.h */,
-				2109D5661B74FFF30042FB6D /* PoniesSearchResultsTableViewCell.m */,
-				2109D56A1B7507780042FB6D /* PonyDetailsViewController.h */,
-				2109D56B1B7507780042FB6D /* PonyDetailsViewController.m */,
-				2109D58D1B7531AC0042FB6D /* RootViewController.h */,
-				2109D58E1B7531AC0042FB6D /* RootViewController.m */,
-				2109D5951B753DE10042FB6D /* FavoritesTableViewController.h */,
-				2109D5961B753DE10042FB6D /* FavoritesTableViewController.m */,
 			);
 			path = Ponies;
 			sourceTree = "<group>";
@@ -221,11 +181,53 @@
 			isa = PBXGroup;
 			children = (
 				2169BDE61B74F45E0025F3DF /* LaunchScreen.xib */,
-				2109D5681B75001A0042FB6D /* PoniesSearchResultsTableViewCell.xib */,
 				2109D56C1B7507780042FB6D /* PonyDetailsViewController.xib */,
 				2109D58F1B7531AC0042FB6D /* RootViewController.xib */,
 			);
 			name = Xibs;
+			sourceTree = "<group>";
+		};
+		497812851BCF1E57001904E9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				497812861BCF1E71001904E9 /* Tableview Cells */,
+				21FCBB8E1B7656DC00500D7B /* Xibs */,
+				2109D5621B74F5700042FB6D /* PoniesTableViewController.h */,
+				2109D5631B74F5700042FB6D /* PoniesTableViewController.m */,
+				2109D56A1B7507780042FB6D /* PonyDetailsViewController.h */,
+				2109D56B1B7507780042FB6D /* PonyDetailsViewController.m */,
+				2109D58D1B7531AC0042FB6D /* RootViewController.h */,
+				2109D58E1B7531AC0042FB6D /* RootViewController.m */,
+				2109D5951B753DE10042FB6D /* FavoritesTableViewController.h */,
+				2109D5961B753DE10042FB6D /* FavoritesTableViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		497812861BCF1E71001904E9 /* Tableview Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2109D5651B74FFF30042FB6D /* PoniesSearchResultsTableViewCell.h */,
+				2109D5661B74FFF30042FB6D /* PoniesSearchResultsTableViewCell.m */,
+				2109D5681B75001A0042FB6D /* PoniesSearchResultsTableViewCell.xib */,
+			);
+			name = "Tableview Cells";
+			sourceTree = "<group>";
+		};
+		497812871BCF1E9A001904E9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		497812881BCF1EA4001904E9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2109D5921B7533D60042FB6D /* NSFileManager+MOAExtensions.h */,
+				2109D5931B7533D60042FB6D /* NSFileManager+MOAExtensions.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		906121610B4F3F38E7A38A64 /* Pods */ = {
@@ -250,6 +252,8 @@
 				2169BDD21B74F45E0025F3DF /* Resources */,
 				7F693654B835D3D6F25B6AB7 /* Copy Pods Resources */,
 				2109D5721B751E530042FB6D /* mogenerator */,
+				497812831BCF1D0D001904E9 /* Embed Frameworks */,
+				497812841BCF1D3F001904E9 /* strip realm framework */,
 			);
 			buildRules = (
 			);
@@ -259,24 +263,6 @@
 			productName = Ponies;
 			productReference = 2169BDD41B74F45E0025F3DF /* Ponies.app */;
 			productType = "com.apple.product-type.application";
-		};
-		2169BDEC1B74F45E0025F3DF /* PoniesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2169BDFA1B74F45E0025F3DF /* Build configuration list for PBXNativeTarget "PoniesTests" */;
-			buildPhases = (
-				2169BDE91B74F45E0025F3DF /* Sources */,
-				2169BDEA1B74F45E0025F3DF /* Frameworks */,
-				2169BDEB1B74F45E0025F3DF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2169BDEF1B74F45E0025F3DF /* PBXTargetDependency */,
-			);
-			name = PoniesTests;
-			productName = PoniesTests;
-			productReference = 2169BDED1B74F45E0025F3DF /* PoniesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -289,10 +275,6 @@
 				TargetAttributes = {
 					2169BDD31B74F45E0025F3DF = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					2169BDEC1B74F45E0025F3DF = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 2169BDD31B74F45E0025F3DF;
 					};
 				};
 			};
@@ -310,7 +292,6 @@
 			projectRoot = "";
 			targets = (
 				2169BDD31B74F45E0025F3DF /* Ponies */,
-				2169BDEC1B74F45E0025F3DF /* PoniesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -325,13 +306,6 @@
 				2109D5911B7531AC0042FB6D /* RootViewController.xib in Resources */,
 				2169BDE51B74F45E0025F3DF /* Images.xcassets in Resources */,
 				2109D5691B75001A0042FB6D /* PoniesSearchResultsTableViewCell.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2169BDEB1B74F45E0025F3DF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +325,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "mogenerator -m $SRCROOT/$TARGET_NAME/DataModel.xcdatamodeld -H $SRCROOT/$TARGET_NAME/CoreData -M $SRCROOT/$TARGET_NAME/CoreData/machine --template-var arc=true";
+		};
+		497812841BCF1D3F001904E9 /* strip realm framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "strip realm framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
 		};
 		7F693654B835D3D6F25B6AB7 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -390,41 +378,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2109D5861B751EED0042FB6D /* Tag.m in Sources */,
-				2109D5841B751EED0042FB6D /* _Tag.m in Sources */,
 				2169BDDD1B74F45E0025F3DF /* AppDelegate.m in Sources */,
 				2109D5971B753DE10042FB6D /* FavoritesTableViewController.m in Sources */,
 				2109D5811B751EED0042FB6D /* Kategory.m in Sources */,
 				2109D56D1B7507780042FB6D /* PonyDetailsViewController.m in Sources */,
-				2109D5821B751EED0042FB6D /* _Kategory.m in Sources */,
 				2109D5641B74F5700042FB6D /* PoniesTableViewController.m in Sources */,
 				2109D5941B7533D60042FB6D /* NSFileManager+MOAExtensions.m in Sources */,
 				2109D5851B751EED0042FB6D /* Pony.m in Sources */,
 				2109D5901B7531AC0042FB6D /* RootViewController.m in Sources */,
 				2109D5711B751CAC0042FB6D /* DataModel.xcdatamodeld in Sources */,
-				2109D5831B751EED0042FB6D /* _Pony.m in Sources */,
 				2109D5671B74FFF30042FB6D /* PoniesSearchResultsTableViewCell.m in Sources */,
 				2169BDDA1B74F45E0025F3DF /* main.m in Sources */,
-				2109D5891B7530EC0042FB6D /* OOPersistenceManager.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2169BDE91B74F45E0025F3DF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2169BDF41B74F45E0025F3DF /* PoniesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2169BDEF1B74F45E0025F3DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2169BDD31B74F45E0025F3DF /* Ponies */;
-			targetProxy = 2169BDEE1B74F45E0025F3DF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2169BDE61B74F45E0025F3DF /* LaunchScreen.xib */ = {
@@ -524,6 +492,10 @@
 			baseConfigurationReference = 237797AC8FE27476DFD3A7F9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Ponies/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -537,47 +509,15 @@
 			baseConfigurationReference = C65D66273CF1B843C8FC5B49 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Ponies/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maestromobile.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		2169BDFB1B74F45E0025F3DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PoniesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maestromobile.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ponies.app/Ponies";
-			};
-			name = Debug;
-		};
-		2169BDFC1B74F45E0025F3DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PoniesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maestromobile.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ponies.app/Ponies";
 			};
 			name = Release;
 		};
@@ -598,15 +538,6 @@
 			buildConfigurations = (
 				2169BDF81B74F45E0025F3DF /* Debug */,
 				2169BDF91B74F45E0025F3DF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2169BDFA1B74F45E0025F3DF /* Build configuration list for PBXNativeTarget "PoniesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2169BDFB1B74F45E0025F3DF /* Debug */,
-				2169BDFC1B74F45E0025F3DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

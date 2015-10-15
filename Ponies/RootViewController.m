@@ -20,27 +20,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.activityIndicatorView startAnimating];
+
+    UITabBarController *tabController = [[UITabBarController alloc] init];
+    
+    PoniesTableViewController *poniesViewController = [[PoniesTableViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:poniesViewController];
+    
+    FavoritesTableViewController *faves = [[FavoritesTableViewController alloc] init];
+    UINavigationController *navController2 = [[UINavigationController alloc] initWithRootViewController:faves];
+    
+    tabController.viewControllers = @[navController, navController2];
+
+    [self addChildViewController:tabController];
+    [self.view addSubview:tabController.view];
+    tabController.view.frame = self.view.bounds;
+    [tabController didMoveToParentViewController:self];
+    
+}
+
+- (void)viewDidLayoutSubviews {
+    UIViewController *child = [self.childViewControllers firstObject];
+    child.view.frame = self.view.bounds;
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
 
-- (void)presentMainInterfaceWithManagedObjectContext:(NSManagedObjectContext *)context; {
-    
-    UITabBarController *tabController = [[UITabBarController alloc] init];
-    
-    PoniesTableViewController *poniesViewController = [[PoniesTableViewController alloc] initWithManagedObjectContext:context];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:poniesViewController];
-    
-    FavoritesTableViewController *faves = [[FavoritesTableViewController alloc] initWithContext:context];
-    UINavigationController *navController2 = [[UINavigationController alloc] initWithRootViewController:faves];
-    
-    tabController.viewControllers = @[navController, navController2];
-    
-    [self.activityIndicatorView stopAnimating];
-    [self presentViewController:tabController animated:NO completion:nil];
-}
 
 @end

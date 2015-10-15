@@ -1,8 +1,8 @@
-#import "_Kategory.h"
+#import <Realm/Realm.h>
 
-@interface Kategory : _Kategory {}
+@interface Kategory : RLMObject
 
-+ (instancetype)kategoryWithDictionary:(NSDictionary *)kategoryInfo context:(NSManagedObjectContext *)context ;
-+ (instancetype)kategoryWithIdentity:(NSString *)identity context:(NSManagedObjectContext *)context;
+@property NSString *identity;
+@property NSString *name;
 
 @end

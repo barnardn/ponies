@@ -10,6 +10,6 @@
 
 @interface PoniesTableViewController : UITableViewController
 
-- (instancetype)initWithManagedObjectContext:(NSManagedObjectContext *)context;
+- (instancetype)init;
 
 @end

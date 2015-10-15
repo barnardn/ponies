@@ -7,12 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "OOPersistenceManager.h"
 #import "RootViewController.h"
 
 @interface AppDelegate ()
-
-@property (strong, nonatomic) OOPersistenceManager *persistenceManager;
 
 @end
 
@@ -27,21 +24,12 @@
     [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]} forState:UIControlStateNormal];
     [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
     [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0.5f green:0.0f blue:1.0f alpha:1.0f]];
-    
+
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor colorWithRed:1.0f green:0.5f blue:0.5f alpha:1.0f];
-    self.window.rootViewController = [[RootViewController alloc] init];
     self.window.tintColor = [UIColor whiteColor];
+    self.window.rootViewController = [[RootViewController alloc] init];
     [self.window makeKeyAndVisible];
-    
-    AppDelegate __weak *weakSelf = self;
-    self.persistenceManager = [[OOPersistenceManager alloc] initWithCompletionBlock:^(NSError *error) {
-        AppDelegate __strong *strongSelf = weakSelf;
-        RootViewController *rootViewController = (RootViewController *)strongSelf.window.rootViewController;
-        [rootViewController presentMainInterfaceWithManagedObjectContext:strongSelf.persistenceManager.managedObjectContext];
-    }];
-    
-
     
     return YES;
 }

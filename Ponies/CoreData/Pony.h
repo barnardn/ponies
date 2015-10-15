@@ -1,8 +1,15 @@
-#import "_Pony.h"
+#import <Realm/Realm.h>
+#import "Kategory.h"
+#import "Tag.h"
 
-@interface Pony : _Pony {}
+@interface Pony : RLMObject
 
-+ (instancetype)ponyWithIdentity:(NSString *)identity context:(NSManagedObjectContext *)context;
-+ (instancetype)ponyFromDictionary:(NSDictionary *)ponyInfo context:(NSManagedObjectContext *)context;
+@property  NSString *identity;
+@property  NSString *name;
+@property  NSString *thumbnail;
+@property  Kategory *kategory;
+@property  RLMArray<Tag *><Tag> *tags;
 
 @end
+
+//RLM_ARRAY_TYPE(Pony)

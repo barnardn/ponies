@@ -41,7 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.nameLabel.text = (self.pony) ? self.pony.kategory.name :  [self.ponyInfo valueForKeyPath:@"category.name"];
-    NSArray *tags = (self.pony) ? [[self.pony.tags allObjects] valueForKeyPath:@"name"] : self.ponyInfo[@"tags"];
+    NSArray *tags = (self.pony) ? [self.pony.tags  valueForKeyPath:@"name"] : self.ponyInfo[@"tags"];
     self.tagsLabel.text = [tags componentsJoinedByString:@","];
 
     [self.favoriteButton addTarget:self action:@selector(favoriteButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
@@ -80,32 +80,60 @@
 - (void)favoriteButtonTapped:(id)sender {
     
     NSString *ponyId = self.ponyInfo[@"id"];
-    Pony *pony = [Pony ponyWithIdentity:ponyId context:self.context];
-    if (!pony) {
-        pony = [Pony ponyFromDictionary:self.ponyInfo context:self.context];
-    }
-    NSString *kategoryId = [self.ponyInfo valueForKeyPath:@"category.id"];
-    Kategory *kategory = [Kategory kategoryWithIdentity:kategoryId context:self.context];
-    if (!kategory) {
-        NSDictionary *value = self.ponyInfo[@"category"];
-        kategory = [Kategory kategoryWithDictionary:value context:self.context ];
-    }
+    Pony *pony = [[Pony alloc] init];
+    pony.identity = ponyId;
+    pony.name = self.ponyInfo[@"name"];
+    
+    Kategory *kategory = [[Kategory alloc] initWithValue:@{@"identity" : [self.ponyInfo valueForKeyPath:@"category.id"],
+                                                           @"name" : [self.ponyInfo valueForKeyPath:@"category.name"]} ];
+
     
     NSArray *tags = self.ponyInfo[@"tags"];
     [tags enumerateObjectsUsingBlock:^(NSString *tagName, NSUInteger idx, BOOL *stop) {
-        Tag *tag = [Tag tagWithName:tagName context:self.context];
-        [pony addTagsObject:tag];
+        Tag *tag = [[Tag alloc] initWithValue:@{@"name" : tagName}] ;
+        [pony.tags addObject:tag];
     }];
     
-    [kategory addPoniesObject:pony];
-    
-    [self.context save:NULL];
-    [self.context.parentContext save:NULL];
+    pony.kategory = kategory;
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    [realm beginWriteTransaction];
+    [realm addObject:pony];
+    [realm commitWriteTransaction];
 
     NSData *ponyFace = UIImagePNGRepresentation(self.fullSizeImageview.image);
     NSString *filename = [NSString stringWithFormat:@"pony-face-%@.png", pony.identity];
     NSURL *outputURL = [[NSFileManager defaultManager] MOA_urlForResourceNamed:filename];
     [ponyFace writeToURL:outputURL atomically:YES];
+    
+    NSLog(@"wrote file to %@", outputURL);
+    
+    
+//    Pony *pony = [Pony ponyWithIdentity:ponyId context:self.context];
+//    if (!pony) {
+//        pony = [Pony ponyFromDictionary:self.ponyInfo context:self.context];
+//    }
+//    NSString *kategoryId = [self.ponyInfo valueForKeyPath:@"category.id"];
+//    Kategory *kategory = [Kategory kategoryWithIdentity:kategoryId context:self.context];
+//    if (!kategory) {
+//        NSDictionary *value = self.ponyInfo[@"category"];
+//        kategory = [Kategory kategoryWithDictionary:value context:self.context ];
+//    }
+//    
+//    NSArray *tags = self.ponyInfo[@"tags"];
+//    [tags enumerateObjectsUsingBlock:^(NSString *tagName, NSUInteger idx, BOOL *stop) {
+//        Tag *tag = [Tag tagWithName:tagName context:self.context];
+//        [pony addTagsObject:tag];
+//    }];
+//    
+//    [kategory addPoniesObject:pony];
+//    
+//    [self.context save:NULL];
+//    [self.context.parentContext save:NULL];
+//
+//    NSData *ponyFace = UIImagePNGRepresentation(self.fullSizeImageview.image);
+//    NSString *filename = [NSString stringWithFormat:@"pony-face-%@.png", pony.identity];
+//    NSURL *outputURL = [[NSFileManager defaultManager] MOA_urlForResourceNamed:filename];
+//    [ponyFace writeToURL:outputURL atomically:YES];
     
     self.favoriteButton.hidden = YES;
     

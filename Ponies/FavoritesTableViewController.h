@@ -10,6 +10,6 @@
 
 @interface FavoritesTableViewController : UITableViewController
 
-- (instancetype)initWithContext:(NSManagedObjectContext *)context;
+- (instancetype)init;
 
 @end
