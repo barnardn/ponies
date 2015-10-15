@@ -13,7 +13,6 @@
 		2109D5691B75001A0042FB6D /* PoniesSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2109D5681B75001A0042FB6D /* PoniesSearchResultsTableViewCell.xib */; };
 		2109D56D1B7507780042FB6D /* PonyDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D56B1B7507780042FB6D /* PonyDetailsViewController.m */; };
 		2109D56E1B7507780042FB6D /* PonyDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2109D56C1B7507780042FB6D /* PonyDetailsViewController.xib */; };
-		2109D5711B751CAC0042FB6D /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2109D56F1B751CAC0042FB6D /* DataModel.xcdatamodeld */; };
 		2109D5811B751EED0042FB6D /* Kategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5751B751EED0042FB6D /* Kategory.m */; };
 		2109D5851B751EED0042FB6D /* Pony.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D57E1B751EED0042FB6D /* Pony.m */; };
 		2109D5861B751EED0042FB6D /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5801B751EED0042FB6D /* Tag.m */; };
@@ -52,7 +51,6 @@
 		2109D56A1B7507780042FB6D /* PonyDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonyDetailsViewController.h; sourceTree = "<group>"; };
 		2109D56B1B7507780042FB6D /* PonyDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PonyDetailsViewController.m; sourceTree = "<group>"; };
 		2109D56C1B7507780042FB6D /* PonyDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PonyDetailsViewController.xib; sourceTree = "<group>"; };
-		2109D5701B751CAC0042FB6D /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		2109D5741B751EED0042FB6D /* Kategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kategory.h; path = CoreData/Kategory.h; sourceTree = "<group>"; };
 		2109D5751B751EED0042FB6D /* Kategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Kategory.m; path = CoreData/Kategory.m; sourceTree = "<group>"; };
 		2109D57D1B751EED0042FB6D /* Pony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pony.h; path = CoreData/Pony.h; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 			children = (
 				2169BDD81B74F45E0025F3DF /* Info.plist */,
 				2169BDD91B74F45E0025F3DF /* main.m */,
-				2109D56F1B751CAC0042FB6D /* DataModel.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -386,7 +383,6 @@
 				2109D5941B7533D60042FB6D /* NSFileManager+MOAExtensions.m in Sources */,
 				2109D5851B751EED0042FB6D /* Pony.m in Sources */,
 				2109D5901B7531AC0042FB6D /* RootViewController.m in Sources */,
-				2109D5711B751CAC0042FB6D /* DataModel.xcdatamodeld in Sources */,
 				2109D5671B74FFF30042FB6D /* PoniesSearchResultsTableViewCell.m in Sources */,
 				2169BDDA1B74F45E0025F3DF /* main.m in Sources */,
 			);
@@ -543,19 +539,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		2109D56F1B751CAC0042FB6D /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				2109D5701B751CAC0042FB6D /* DataModel.xcdatamodel */,
-			);
-			currentVersion = 2109D5701B751CAC0042FB6D /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 2169BDCC1B74F45E0025F3DF /* Project object */;
 }

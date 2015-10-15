@@ -11,5 +11,3 @@
 @property  RLMArray<Tag *><Tag> *tags;
 
 @end
-
-//RLM_ARRAY_TYPE(Pony)

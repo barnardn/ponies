@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 MaestroMobile. All rights reserved.
 //
 
+#import <Realm/Realm.h>
+
 #import "RootViewController.h"
 #import "PoniesTableViewController.h"
 #import "FavoritesTableViewController.h"
@@ -21,6 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    NSLog(@"%@", [RLMRealm defaultRealm].path);
+    
     UITabBarController *tabController = [[UITabBarController alloc] init];
     
     PoniesTableViewController *poniesViewController = [[PoniesTableViewController alloc] init];
