@@ -3,7 +3,7 @@
 //  Ponies
 //
 //  Created by Norm Barnard on 8/7/15.
-//  Copyright (c) 2015 MaestroMobile. All rights reserved.
+//  Copyright (c) 2015 Norm Barnard. All rights reserved.
 //
 
 #import <CoreData/CoreData.h>
@@ -32,6 +32,7 @@
 
 - (UITabBarItem *)tabBarItem {
     UITabBarItem *tbi = [super tabBarItem];
+    tbi.image = [[UIImage imageNamed:@"tab-faves"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     tbi.title = @"My Faves!";
     return tbi;
 }

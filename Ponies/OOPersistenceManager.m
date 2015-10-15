@@ -3,7 +3,7 @@
 //  Stack
 //
 //  Created by Norm Barnard on 5/18/15.
-//  Copyright (c) 2015 MaestroMobile. All rights reserved.
+//  Copyright (c) 2015 Norm Barnard. All rights reserved.
 //
 
 #import "NSFileManager+MOAExtensions.h"
@@ -11,7 +11,7 @@
 
 static NSString * const kManagedObjectModelName = @"DataModel";
 static NSString * const kPersistentStoreFileName = @"ponies.sqlite";
-static NSString * const kSetupCoreDataDefaultsUserDefaultsKey = @"com.maestromobile.ontario.setupcoredatadefaultskey";
+static NSString * const kSetupCoreDataDefaultsUserDefaultsKey = @"com.Norm Barnard.ontario.setupcoredatadefaultskey";
 
 @interface OOPersistenceManager()
 
