@@ -3,12 +3,12 @@
 //  Stack
 //
 //  Created by Norm Barnard on 5/18/15.
-//  Copyright (c) 2015 MaestroMobile. All rights reserved.
+//  Copyright (c) 2015 Norm Barnard. All rights reserved.
 //
 
 #import "NSFileManager+MOAExtensions.h"
 
-static NSString * const kCachesSubfolderName = @"com.maestromobile.ontario-cache";
+static NSString * const kCachesSubfolderName = @"com.Norm Barnard.ontario-cache";
 
 @implementation NSFileManager (MOAExtensions)
 

@@ -268,7 +268,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = MaestroMobile;
+				ORGANIZATIONNAME = barnardn;
 				TargetAttributes = {
 					2169BDD31B74F45E0025F3DF = {
 						CreatedOnToolsVersion = 6.4;
